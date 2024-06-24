@@ -2,8 +2,8 @@ FROM node:latest
 
 ENV APP_ROOT /web
 
-WORKDIR ${APP_ROOT}
-ADD . ${APP_ROOT}
+WORKDIR /web
+ADD . /web
 
 RUN npm ci
 
